@@ -7,7 +7,7 @@ def solve():
     n, m, s, q = map(int, input().split())
     adj = [[] for i in range(n + 1)]
     
-    for _ in range(m):
+    for i in range(m):
         u, v = map(int, input().split())
         adj[u].append(v)
         adj[v].append(u)
@@ -33,3 +33,4 @@ def solve():
     print(" ".join(result))
 
 solve()
+
